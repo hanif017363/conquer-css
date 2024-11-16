@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 3000px;
+}
+.div-1 {
+  margin-top: 100px;
+  width: 50vh;
+  height: 50vh;
+  border: 10px solid black;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(/895681.jpg),
+    url(/elden-ring-dragon-monster-hd-wallpaper-1920x1080-uhdpaper.com-428.1_b.jpg);
+  background-size: 300px, 400px;
+  background-repeat: no-repeat;
+  background-position: center, top;
+  background-attachment: fixed, scroll;
+}
+.div-2 {
+  width: 50vh;
+  height: 50vh;
+  border: 10px solid black;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(to top, blue, red);
+}
+li {
+  font-size: 5rem;
+}
+li:nth-of-type(2) {
+  color: brown;
+}
+.mother {
+  margin: 4rem;
+  color: #fff;
+  gap: 3rem;
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-areas:
+    "one"
+    "two"
+    "three"
+    "four"
+    "five"
+    "six"
+    "seven"
+    "eight"
+    "nine";
+}
+.child:nth-child(1) {
+  grid-area: one;
+}
+.child:nth-child(2) {
+  grid-area: two;
+}
+.child:nth-child(3) {
+  grid-area: three;
+}
+.child:nth-child(4) {
+  grid-area: four;
+}
+.child:nth-child(5) {
+  grid-area: five;
+}
+.child:nth-child(6) {
+  grid-area: six;
+}
+.child:nth-child(7) {
+  grid-area: seven;
+}
+.child:nth-child(8) {
+  grid-area: eight;
+}
+.child:nth-child(9) {
+  grid-area: nine;
+}
+@media screen and (min-width: 450px) {
+  .mother {
+    display: grid;
+    grid-template-areas:
+      "one one two three"
+      "four five six three"
+      "four seven eight nine";
+  }
+}
+
+.child {
+  width: 100%;
+
+  padding: 6rem 1rem;
+  background-color: brown;
+}
+.child:last-child {
+  background-color: grey;
+}
+
+.ammi {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 0 3rem;
+}
+.ami {
+  background-color: green;
+  color: #fff;
+  padding: 5rem;
+}
+.ami-column-span-2 {
+  grid-column: span 2;
+}
+/* .ami:last-child {
+  background-color: gray;
+  grid-column-start: 4;      ///              no one way
+  grid-row-start: 1;
+  grid-row-end: span 3;
+} */
+.ami:nth-child(7) {
+  grid-column: span 2;
+}
+.ami:last-child {
+  background-color: gray;
+  grid-column-start: 4;
+  grid-row: 1 / 4;
+}
+/* .ami:last-child {
+  background-color: gray;
+  grid-column-start: 4;           //no two way
+  grid-row-start: 1;
+  grid-row-end: 4;
+} */

@@ -1,0 +1,41 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.super-container {
+  background-color: #23424a;
+  width: 80%;
+  margin: auto;
+  padding: 10em 8em;
+  margin-top: 2rem;
+}
+.container {
+  width: 50%;
+  max-width: 750px;
+}
+h1 {
+  font-size: 3rem;
+  color: white;
+}
+p {
+  font-size: 1.5rem;
+  color: white;
+}
+button {
+  background-color: #38cfd9;
+  color: black;
+  padding: 1em 2em;
+  font-size: 1.5rem;
+  border-radius: 2.3rem;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #03e6f7;
+}

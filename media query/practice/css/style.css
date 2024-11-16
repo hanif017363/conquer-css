@@ -1,0 +1,16 @@
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 10em 8em;
+  max-width: 1100px;
+  margin: 0 auto;
+  background-color: red;
+}
+@media (min-width: 700px) {
+  .container {
+    background-color: brown;
+  }
+}
